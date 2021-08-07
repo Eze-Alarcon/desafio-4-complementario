@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./clase4Alarcon-complementario.css">
+</head>
+<body>
+    <!-- <div>
+        <img src="./desafio3.png" alt="Enunciado del desafio 3">
+    </div> -->
+
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center my-1">Juego: Adivina el numero!</h5>
+            <p class="card-text my-1">El juego consiste en adivinar el numero (seguro q no te lo esperabas 🙃) peeeero, el numero esta ubicado entre 1 y 10...</p>
+            <p class="card-text my-1">Tienes 3 modalidades</p>
+            <ul class="my-1">
+                <li>Facil: 7 intentos</li>
+                <li>Medio: 5 intentos</li>
+                <li>Dificil: 3 intentos</li>
+            </ul>
+            <div class="input-group my-2 container">
+
+                <div class="container my-0 hide" id="name--container">
+                    <div class="row">
+                        <label for="username" class="col px-0">
+                            Antes que nada, ingresa tu nombre:
+                        </label>
+                    </div>
+                    <div class="row my-2">
+                        <button class="btn btn-primary col-3" type="button" id="button-1" onclick="mostrarSaludo()">
+                            Nombre:
+                        </button>
+                        <input type="text" class="form-control col" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" id="username">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row mt-2" id="botones-modo">
+                        <button type="button" class="btn btn-outline-success col mr-3" onclick="facil()">
+                            Facil
+                        </button>
+
+                        <button type="button" class="btn btn-outline-warning col mx-3" onclick="medio()">
+                            Medio
+                        </button>
+
+                        <button type="button" class="btn btn-outline-danger col ml-3" onclick="dificil()">
+                            Dificil
+                        </button>
+                    </div>
+                    <div class="row">
+                        <p id="cantOportunidades"></p>
+                    </div>
+                </div>
+
+
+                <div class="container hide" id="game-inputs">
+                    <div class="row my-2" id="game-row">
+                        <label for="number" class="col-12 px-0">
+                            Ingresa un numero (entero) que creas correcto:
+                        </label>
+                        <button class="btn btn-primary col-3" type="button" id="boton--intento" onclick="comenzar()">
+                            Probar con:
+                        </button>
+                        
+                        <input type="number" class="form-control col" placeholder="Insertar Numero de 0 a 10" aria-label="Example text with button addon" aria-describedby="button-addon1" id="number">
+                        <p class="card-text col-12 mt-1" id="saludo"></p>
+                    </div>
+                    <div class="row">
+    
+                        <p class="card-text col-12 mt-1" id="respuesta"></p>
+                        
+                        <button type="button" class="btn btn-outline-primary col-12 hide mt-0" id="boton-reinicio" onclick="refreshPage()">
+                            Deseas volver a empezar?
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <script 
+        src="./clase4Alarcon-complementario.js">
+    </script>
+    <!-- Bootstrap -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
